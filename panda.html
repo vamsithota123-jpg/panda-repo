@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panda Card</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.panda-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6b8e23;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.rating span {
+  font-size: 24px;
+  color: gold;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Panda Card</h1>
+    
+    <div class="card">
+      <div class="image-container">
+        <img src="panda.jpg" alt="Panda Image" class="panda-image">
+      </div>
+      <div class="card-content">
+        <h2 class="name">John Doe</h2>
+        <p>Computer Science 1</p>
+        <p>Computer Science 2</p>
+        <p><strong>Year: 3</strong></p>
+        <div class="rating">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9734;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
